@@ -2,7 +2,7 @@
 
 Portfólio pessoal de **Lucas Eduardo Alves**, desenvolvedor frontend com React, Angular, Vue, React Native e Python. O site apresenta quem eu sou, minhas habilidades e os projetos que desenvolvi, com links para o código e para o contato direto por WhatsApp.
 
-🔗 **Site:** *(adicione aqui o link do portfólio publicado)*
+🔗 **Site:** *([Codariadev](https://codariadev.vercel.app/))*
 
 ---
 
