@@ -16,45 +16,6 @@ export const about = [
   "Também desenvolvo apps mobile com React Native, automações e dashboards com Python, e integrações com Firebase. Sou curioso por natureza e estou sempre buscando um jeito mais simples e sólido de resolver um problema.",
 ];
 
-export const facts = [
-  { value: "+4 anos", label: "de experiência em programação" },
-  { value: "4", label: "projetos publicados" },
-  { value: "3", label: "frameworks frontend no dia a dia" },
-];
-
-export const skillGroups = [
-  {
-    title: "Frontend",
-    text: "Interfaces responsivas, componentes reutilizáveis e atenção à performance.",
-    items: ["React", "Next.js", "Angular", "Vue", "HTML", "CSS", "JavaScript"],
-  },
-  {
-    title: "Mobile",
-    text: "Apps multiplataforma com um único código base.",
-    items: ["React Native", "Expo"],
-  },
-  {
-    title: "Dados e backend",
-    text: "Automação, análise de dados e integrações com serviços na nuvem.",
-    items: ["Python", "Firebase", "Streamlit", "Plotly"],
-  },
-  {
-    title: "Fluxo de trabalho",
-    text: "Versionamento organizado e entregas colaborativas.",
-    items: ["Git", "Git Flow", "Vercel"],
-  },
-];
-
-export type Project = {
-  title: string;
-  description: string;
-  category: "Web" | "APIs" ;
-  stack: string[];
-  demo?: string;
-  repo: string;
-  status?: boolean;
-};
-
 export const projects: Project[] = [
   {
     title: "Debt Management API",
@@ -96,6 +57,48 @@ export const projects: Project[] = [
   
 ];
 
+export const facts = [
+  { value: "+4 anos", label: "de experiência em programação" },
+  { value: `${projects.length}`, label: "projetos publicados" },
+  { value: "3", label: "frameworks frontend no dia a dia" },
+];
+
+
+export const skillGroups = [
+  {
+    title: "Frontend",
+    text: "Interfaces responsivas, componentes reutilizáveis e atenção à performance.",
+    items: ["React", "Next.js", "Angular", "Vue", "HTML", "CSS", "JavaScript"],
+  },
+  {
+    title: "Mobile",
+    text: "Apps multiplataforma com um único código base.",
+    items: ["React Native", "Expo"],
+  },
+  {
+    title: "Dados e backend",
+    text: "Automação, análise de dados e integrações com serviços na nuvem.",
+    items: ["Python", "Firebase", "Streamlit", "Plotly"],
+  },
+  {
+    title: "Fluxo de trabalho",
+    text: "Versionamento organizado e entregas colaborativas.",
+    items: ["Git", "Git Flow", "Vercel"],
+  },
+];
+
+export type Project = {
+  title: string;
+  description: string;
+  category: "Web" | "APIs" ;
+  stack: string[];
+  demo?: string;
+  repo: string;
+  status?: boolean;
+};
+
+
+
 export const challenges = [
   {
     title: "Weather API",
@@ -104,3 +107,5 @@ export const challenges = [
     repo: "https://github.com/codariadev/desafio-st1",
   },
 ];
+
+
