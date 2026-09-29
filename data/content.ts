@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export const profile = {
   name: "Lucas Eduardo Alves",
   role: "Desenvolvedor Frontend | Backend",
@@ -15,6 +17,30 @@ export const about = [
   "Programo há mais de 4 anos e gosto de transformar ideias em produtos que as pessoas realmente conseguem usar. Comecei pelo web design, com HTML, CSS e JavaScript, e evoluí para aplicações completas em React, Next e Angular.",
   "Também desenvolvo apps mobile com React Native, automações e dashboards com Python, e integrações com Firebase. Sou curioso por natureza e estou sempre buscando um jeito mais simples e sólido de resolver um problema.",
 ];
+
+export const education: StudyItem[] = [
+  {
+    title: "Engenharia de Software",
+    institution: "UFBRA",
+    pInit: "2026",
+    pEnd: "2030",
+    progress: 25,
+    status: "andamento",
+    description: "Graduação com ênfase em todo o ciclo de vida do software, da análise de requisitos à entrega. Inclui lógica de programação, estruturas de dados, orientação a objetos, banco de dados, engenharia de requisitos, arquitetura e padrões de projeto, qualidade e testes, e gestão de projetos com metodologias ágeis.",
+  }
+]
+
+export const courses: StudyItem[] = [
+    {
+      title: "OKR - Objectives and Key Results",
+      institution: "FM2S Educação e Consultoria",
+      pInit: "2025",
+      pEnd: "2025",
+      status: "concluido",
+      progress: 100,
+      description: "Framework de gestão ágil que conecta a estratégia da empresa à execução das equipes. Ele funciona através de duas frentes: Objetivos, que definem para onde ir de forma inspiradora, e Resultados-Chave (KRs), que são metas quantitativas para medir o sucesso. O foco é priorizar a entrega de valor e gerar resultados reais, em vez de apenas cumprir tarefas..",
+      link: "https://ead.fm2s.com.br/verify/46b5dea324d631f46252666770717758cdf674ed",    }
+]
 
 export const projects: Project[] = [
   {
@@ -58,7 +84,7 @@ export const projects: Project[] = [
 ];
 
 export const facts = [
-  { value: "+4 anos", label: "de experiência em programação" },
+  { value: `+${new Date().getFullYear() - 2022}`, label: "de experiência em programação" },
   { value: `${projects.length}`, label: "projetos publicados" },
   { value: "3", label: "frameworks frontend no dia a dia" },
 ];
@@ -97,6 +123,16 @@ export type Project = {
   status?: boolean;
 };
 
+export type StudyItem = {
+  title: string;
+  institution: string;
+  pInit: string;
+  pEnd: string;
+  status: "andamento" | "concluido";
+  progress?: number;
+  link?: string;
+  description?: string,
+};
 
 
 export const challenges = [

@@ -272,6 +272,128 @@ a {
   gap: 3rem;
 }
 
+.study-groups {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.study>h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1.25rem;
+}
+
+.study ol {
+  display: grid;
+  gap: 1rem;
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--line);
+}
+
+.study-item {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.3rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.study-item::before {
+  content: "";
+  position: absolute;
+  left: calc(-1.5rem - 6px);
+  top: 1.6rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--bg);
+}
+
+.study-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+}
+
+.study-item h4 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  letter-spacing: -0.01em;
+}
+
+.study-inst {
+  color: var(--muted);
+  font-size: .95rem;
+}
+
+.study-period-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.study-period, .percentage {
+  font-size: .85rem;
+  color: var(--muted);
+}
+.percentage {
+  color: #c4bf61;
+}
+
+.percentage-done {
+  color: #22a06b;
+}
+
+.study-desc {
+  color: var(--muted);
+  font-size: .95rem;
+}
+
+.badge-done {
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+  color: var(--accent);
+}
+
+.progress {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--line);
+  overflow: hidden;
+  margin-top: .3rem;
+}
+
+.progress span {
+  display: block;
+  height: 100%;
+  background: var(--signal);
+  border-radius: inherit;
+}
+.progress-done span {
+  background: #22a06b;
+}
+
+.study-link {
+  align-self: flex-start;
+  font-weight: 600;
+  font-size: .95rem;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 4px;
+}
+
+.study-link:hover {
+  color: var(--accent);
+}
+
 .prose {
   display: grid;
   gap: 1.1rem;
@@ -378,6 +500,7 @@ a {
   grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
 }
+
 
 .project {
   background: var(--surface);

@@ -1,12 +1,14 @@
 import Avatar from "@/components/Avatar";
 import Projects from "@/components/Projects";
-import { profile, about, facts, skillGroups, projects, challenges } from "@/data/content";
+import Study from "@/components/Study";
+import { profile, about, facts, skillGroups, projects, challenges, courses, education } from "@/data/content";
 
 const nav = [
   ["Sobre", "#sobre"],
   ["Habilidades", "#habilidades"],
   ["Projetos", "#projetos"],
   ["Desafios", "#desafios"],
+  ["Formação", "#formacao"],
 ];
 
 export default function Home() {
@@ -68,6 +70,15 @@ export default function Home() {
                 </div>
               ))}
             </dl>
+          </div>
+        </section>
+
+        <section id="formacao" className="section wrap">
+          <h2>Formação</h2>
+          <p className="section-note">Cursos, treinamentos e formações acadêmicas.</p>
+          <div className="study-groups">
+              <Study heading="Graduação" items={education} />
+              <Study heading="Cursos e certificados" items={courses} />
           </div>
         </section>
 
