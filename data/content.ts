@@ -1,5 +1,3 @@
-import { title } from "process";
-
 export const profile = {
   name: "Lucas Eduardo Alves",
   role: "Desenvolvedor Frontend | Backend",
@@ -43,6 +41,15 @@ export const courses: StudyItem[] = [
 ]
 
 export const projects: Project[] = [
+  {
+    title: "Producer / Consumer com Node.js + RabbitMQ",
+    status: true,
+    description:
+      "Dois microsserviços Node.js que se comunicam de forma assíncrona por uma fila RabbitMQ e testes unitários.",
+    category: "APIs",
+    stack: ["Node.js", "RabbitMQ", "Docker"],
+    repo: "https://github.com/codariadev/rabbitmq",
+  },
   {
     title: "Debt Management API",
     status: true,
@@ -116,7 +123,7 @@ export const skillGroups = [
 export type Project = {
   title: string;
   description: string;
-  category: "Web" | "APIs" ;
+  category: "Web" | "APIs";
   stack: string[];
   demo?: string;
   repo: string;
