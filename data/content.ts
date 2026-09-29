@@ -5,7 +5,7 @@ export const profile = {
   intro:
     "Desenvolvo aplicações web com foco em performance, usabilidade e design. Trabalho na construção de interfaces com Next, Angular e Vue, e na estruturação de dados e APIs com Python e Firebase.",
   location: "Santa Catarina, Brasil",
-  whatsapp: "55548920048026",
+  whatsapp: "5548920048026",
   linkedin: "https://www.linkedin.com/in/lucasealves/",
   github: "https://github.com/codariadev",
   photo: "/assets/profile.jpg",
