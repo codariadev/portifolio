@@ -22,7 +22,7 @@ export const education: StudyItem[] = [
     institution: "UFBRA",
     pInit: "2026",
     pEnd: "2030",
-    progress: 25,
+    progress: 12,
     status: "andamento",
     description: "Graduação com ênfase em todo o ciclo de vida do software, da análise de requisitos à entrega. Inclui lógica de programação, estruturas de dados, orientação a objetos, banco de dados, engenharia de requisitos, arquitetura e padrões de projeto, qualidade e testes, e gestão de projetos com metodologias ágeis.",
   }
