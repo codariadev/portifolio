@@ -5,10 +5,10 @@ import { profile, about, facts, skillGroups, projects, challenges, courses, educ
 
 const nav = [
   ["Sobre", "#sobre"],
+  ["Formação", "#formacao"],
   ["Habilidades", "#habilidades"],
   ["Projetos", "#projetos"],
   ["Desafios", "#desafios"],
-  ["Formação", "#formacao"],
 ];
 
 export default function Home() {
