@@ -86,6 +86,14 @@ export const projects: Project[] = [
     stack: ["Python", "Streamlit", "Pandas", "Plotly", "openpyxl"],
     repo: "https://github.com/codariadev/lavaflow-app",
     demo: "https://dashboardvendas-nwfekbrxlabmuhe2ntdwrw.streamlit.app/"
+  },{
+    title: "SecurusAuth",
+    status: false,
+    description:
+      "API RESTful de autenticação e autorização desenvolvida em FastAPI com Python 3.14. Conta com hashing de passwords seguro usando bcrypt, emissão e validação de tokens JWT (Bearer), validação de schemas com Pydantic e documentação interativa com Swagger UI.",
+    category: "APIs",
+    stack: ["Python", "FastAPI", "Pydantic", "JWT", "Uvicorn", "Bcrypt"],
+    repo: "https://github.com/codariadev/securusauth",
   },
   
 ];
