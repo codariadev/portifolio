@@ -29,18 +29,42 @@ export const education: StudyItem[] = [
 ]
 
 export const courses: StudyItem[] = [
-    {
-      title: "OKR - Objectives and Key Results",
-      institution: "FM2S Educação e Consultoria",
-      pInit: "2025",
-      pEnd: "2025",
-      status: "concluido",
-      progress: 100,
-      description: "Framework de gestão ágil que conecta a estratégia da empresa à execução das equipes. Ele funciona através de duas frentes: Objetivos, que definem para onde ir de forma inspiradora, e Resultados-Chave (KRs), que são metas quantitativas para medir o sucesso. O foco é priorizar a entrega de valor e gerar resultados reais, em vez de apenas cumprir tarefas..",
-      link: "https://ead.fm2s.com.br/verify/46b5dea324d631f46252666770717758cdf674ed",    }
+  {
+    title: "OKR - Objectives and Key Results",
+    institution: "FM2S Educação e Consultoria",
+    pInit: "2025",
+    pEnd: "2025",
+    status: "concluido",
+    progress: 100,
+    description: "Framework de gestão ágil que conecta a estratégia da empresa à execução das equipes. Ele funciona através de duas frentes: Objetivos, que definem para onde ir de forma inspiradora, e Resultados-Chave (KRs), que são metas quantitativas para medir o sucesso. O foco é priorizar a entrega de valor e gerar resultados reais, em vez de apenas cumprir tarefas..",
+    link: "https://ead.fm2s.com.br/verify/46b5dea324d631f46252666770717758cdf674ed",
+  }
 ]
 
 export const projects: Project[] = [
+  {
+    title: "Codaria SaaS — Plataforma de Gestão para Barbearias e Salões",
+    status: true,
+    description:
+      "Plataforma SaaS multi-tenant desenvolvida para centralizar a gestão de barbearias e salões de beleza, com módulos de agendamento, clientes, profissionais, serviços, estoque, financeiro, comissões e relatórios. Arquitetura com Firebase independente por estabelecimento, permitindo isolamento dos dados e gerenciamento centralizado dos tenants.",
+    category: "Web",
+    stack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Firebase",
+      "Firebase Authentication",
+      "Cloud Firestore",
+      "Firebase Admin SDK",
+      "Firebase Storage",
+      "Tailwind CSS",
+      "Vitest",
+      "ESLint"
+    ],
+    repo: "https://github.com/codariadev/codariasaas",
+    version: "v1.0.0",
+  },
   {
     title: "Producer / Consumer com Node.js + RabbitMQ",
     status: true,
@@ -86,7 +110,7 @@ export const projects: Project[] = [
     stack: ["Python", "Streamlit", "Pandas", "Plotly", "openpyxl"],
     repo: "https://github.com/codariadev/lavaflow-app",
     demo: "https://dashboardvendas-nwfekbrxlabmuhe2ntdwrw.streamlit.app/"
-  },{
+  }, {
     title: "SecurusAuth",
     status: false,
     description:
@@ -95,7 +119,7 @@ export const projects: Project[] = [
     stack: ["Python", "FastAPI", "Pydantic", "JWT", "Uvicorn", "Bcrypt"],
     repo: "https://github.com/codariadev/securusauth",
   },
-  
+
 ];
 
 export const facts = [
@@ -136,6 +160,7 @@ export type Project = {
   demo?: string;
   repo: string;
   status?: boolean;
+  version?: string;
 };
 
 export type StudyItem = {

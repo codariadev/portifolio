@@ -43,6 +43,7 @@ export default function Projects({ projects }: { projects: Project[] }) {
               <a href={p.repo} target="_blank" rel="noopener noreferrer">
                 Ver código
               </a>
+              {p.version && <span className="version">{p.version}</span>}
             </div>
           </li>
         ))}

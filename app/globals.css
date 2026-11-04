@@ -533,6 +533,7 @@ a {
   padding-top: 0.8rem;
   border-top: 1px solid var(--line);
   margin-top: 0.4rem;
+  justify-content: space-between;
 }
 
 .project-links a {
