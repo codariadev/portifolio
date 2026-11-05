@@ -1,16 +1,25 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import type { Project } from "@/data/content";
-
-const filters = ["Todos", "Web", "APIs"] as const;
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Projects({ projects }: { projects: Project[] }) {
-  const [active, setActive] = useState<(typeof filters)[number]>("Todos");
-  const list = active === "Todos" ? projects : projects.filter((p) => p.category === active);
+  const { t, lang } = useLanguage();
+  const filters = t.ui.filters;
+  const allFilter = filters[0];
+
+  const [active, setActive] = useState(allFilter);
+
+  // Reset filter to "All" whenever language changes
+  useEffect(() => {
+    setActive(allFilter);
+  }, [lang, allFilter]);
+
+  const list = active === allFilter ? projects : projects.filter((p) => p.category === active);
 
   return (
     <>
-      <div className="filters" role="group" aria-label="Filtrar projetos">
+      <div className="filters" role="group" aria-label={lang === "pt" ? "Filtrar projetos" : "Filter projects"}>
         {filters.map((f) => (
           <button key={f} aria-pressed={active === f} onClick={() => setActive(f)}>
             {f}
@@ -24,7 +33,7 @@ export default function Projects({ projects }: { projects: Project[] }) {
               <h3>{p.title}</h3>
               {p.status !== undefined && (
                 <span className={`badge ${p.status ? "badge-success" : "badge-warning"}`}>
-                  {p.status ? "Finalizado" : "Em andamento"}
+                  {p.status ? t.ui.finished : t.ui.inProgress}
                 </span>
               )}
             </div>
@@ -37,11 +46,11 @@ export default function Projects({ projects }: { projects: Project[] }) {
             <div className="project-links">
               {p.demo && (
                 <a href={p.demo} target="_blank" rel="noopener noreferrer">
-                  Ver demo
+                  {t.ui.seeDemo}
                 </a>
               )}
               <a href={p.repo} target="_blank" rel="noopener noreferrer">
-                Ver código
+                {t.ui.seeCode}
               </a>
               {p.version && <span className="version">{p.version}</span>}
             </div>
