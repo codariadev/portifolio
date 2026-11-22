@@ -58,7 +58,7 @@ export const content = {
       },
       {
         title: "Codaria SaaS — Plataforma de Gestão para Barbearias e Salões",
-        status: true,
+        status: false,
         description:
           "Plataforma SaaS multi-tenant desenvolvida para centralizar a gestão de barbearias e salões de beleza, com módulos de agendamento, clientes, profissionais, serviços, estoque, financeiro, comissões e relatórios. Arquitetura com Firebase independente por estabelecimento, permitindo isolamento dos dados e gerenciamento centralizado dos tenants.",
         category: "Web" as const,
@@ -76,7 +76,6 @@ export const content = {
           "Vitest",
           "ESLint",
         ],
-        repo: "https://github.com/codariadev/codariasaas",
         version: "v1.0.0",
       },
       {
@@ -131,7 +130,7 @@ export const content = {
           "Dashboard interativo de vendas a partir de planilhas Excel. Calcula o faturamento automaticamente, exibe indicadores como faturamento total e ticket médio, gráficos por produto e por dia, filtros por período e produto, e permite exportar os dados filtrados em CSV.",
         category: "Web" as const,
         stack: ["Python", "Streamlit", "Pandas", "Plotly", "openpyxl"],
-        repo: "https://github.com/codariadev/lavaflow-app",
+        repo: "https://github.com/codariadev/dashboard_vendas",
         demo: "https://dashboardvendas-nwfekbrxlabmuhe2ntdwrw.streamlit.app/",
       },
       {
@@ -210,7 +209,7 @@ export const content = {
       completed: "Concluído",
       facts: [
         { value: `+${new Date().getFullYear() - 2022}`, label: "de experiência em programação" },
-        { value: "7", label: "projetos publicados" },
+        { value: "", label: "projetos publicados" }, // preenchido com projects.length
         { value: "3", label: "frameworks frontend no dia a dia" },
       ],
     },
@@ -272,7 +271,7 @@ export const content = {
       },
       {
         title: "Codaria SaaS — Management Platform for Barbershops and Salons",
-        status: true,
+        status: false,
         description:
           "Multi-tenant SaaS platform developed to centralize the management of barbershops and beauty salons, with modules for scheduling, clients, professionals, services, inventory, finance, commissions, and reports. Architecture with independent Firebase per establishment, enabling data isolation and centralized tenant management.",
         category: "Web" as const,
@@ -290,7 +289,6 @@ export const content = {
           "Vitest",
           "ESLint",
         ],
-        repo: "https://github.com/codariadev/codariasaas",
         version: "v1.0.0",
       },
       {
@@ -345,7 +343,7 @@ export const content = {
           "Interactive sales dashboard from Excel spreadsheets. Automatically calculates revenue, displays indicators such as total revenue and average ticket, charts by product and by day, filters by period and product, and allows exporting filtered data to CSV.",
         category: "Web" as const,
         stack: ["Python", "Streamlit", "Pandas", "Plotly", "openpyxl"],
-        repo: "https://github.com/codariadev/lavaflow-app",
+        repo: "https://github.com/codariadev/dashboard_vendas",
         demo: "https://dashboardvendas-nwfekbrxlabmuhe2ntdwrw.streamlit.app/",
       },
       {
@@ -424,7 +422,7 @@ export const content = {
       completed: "Completed",
       facts: [
         { value: `+${new Date().getFullYear() - 2022}`, label: "years of programming experience" },
-        { value: "7", label: "published projects" },
+        { value: "", label: "published projects" }, // filled from projects.length
         { value: "3", label: "frontend frameworks used daily" },
       ],
     },
@@ -437,7 +435,7 @@ export type Project = {
   category: "Web" | "APIs";
   stack: string[];
   demo?: string;
-  repo: string;
+  repo?: string;
   status?: boolean;
   version?: string;
 };
@@ -452,6 +450,15 @@ export type StudyItem = {
   link?: string;
   description?: string;
 };
+
+// "Projetos publicados" acompanha a lista. Itens em andamento continuam
+// no portfólio, então seguem na contagem — o mesmo critério de projects.length.
+const publishedProjectLabels = new Set(["projetos publicados", "published projects"]);
+
+for (const lang of ["pt", "en"] as const) {
+  const fact = content[lang].ui.facts.find((item) => publishedProjectLabels.has(item.label));
+  if (fact) fact.value = String(content[lang].projects.length);
+}
 
 export function getContent(lang: Language) {
   return content[lang];
