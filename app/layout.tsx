@@ -24,14 +24,6 @@ export const metadata: Metadata = {
   description,
   alternates: { canonical: "/" },
   robots: { index: true, follow: true },
-  icons: {
-    icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-48.png", sizes: "48x48", type: "image/png" },
-    ],
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
-  },
   openGraph: {
     title,
     description,
@@ -39,14 +31,6 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     url: siteUrl,
     siteName: "CodariaDev",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Lucas Eduardo Alves, desenvolvedor full-stack — CodariaDev",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -54,7 +38,6 @@ export const metadata: Metadata = {
     creator: "@codariadev",
     title,
     description,
-    images: ["/og-image.png"],
   },
 };
 
