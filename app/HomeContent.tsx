@@ -38,6 +38,7 @@ export default function HomeContent() {
         <section id="topo" className="hero wrap">
           <div className="hero-text">
             <p className="status"><i aria-hidden="true" />{ui.available}</p>
+            <p className="location">{profile.location}</p>
             <h1>{profile.headline}</h1>
             <p className="lead">
               {profile.welcome} {profile.name}, {profile.role.toLowerCase()}. {profile.intro}
@@ -49,6 +50,12 @@ export default function HomeContent() {
               </a>
               <a className="btn btn-ghost" href={profile.github} target="_blank" rel="noopener noreferrer">
                 GitHub
+              </a>
+              <a className="btn btn-ghost" href={profile.x} target="_blank" rel="noopener noreferrer">
+                X
+              </a>
+              <a className="btn btn-ghost" href={profile.instagram} target="_blank" rel="noopener noreferrer">
+                Instagram
               </a>
             </div>
           </div>
@@ -133,6 +140,8 @@ export default function HomeContent() {
           <p>
             <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href={profile.github} target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href={profile.x} target="_blank" rel="noopener noreferrer">X</a>
+            <a href={profile.instagram} target="_blank" rel="noopener noreferrer">Instagram</a>
           </p>
         </div>
       </footer>

@@ -1,6 +1,6 @@
 # Portfólio | Lucas Eduardo Alves
 
-Portfólio pessoal de **Lucas Eduardo Alves**, desenvolvedor frontend com React, Angular, Vue, React Native e Python. O site apresenta quem eu sou, minhas habilidades e os projetos que desenvolvi, com links para o código e para o contato direto por WhatsApp.
+Portfólio pessoal de **Lucas Eduardo Alves**, desenvolvedor full-stack em Palhoça/SC, com Next.js, React, Angular, Vue, React Native, Python e Firebase. O site apresenta quem eu sou, minhas habilidades e os projetos que desenvolvi, com links para o código e para o contato direto por WhatsApp.
 
 🔗 **Site:** *([Codariadev](https://codariadev.vercel.app/))*
 
@@ -11,7 +11,7 @@ Portfólio pessoal de **Lucas Eduardo Alves**, desenvolvedor frontend com React,
 - Apresentação pessoal com foto (ou iniciais, quando não há foto)
 - Lista de projetos com descrição, categoria, tecnologias utilizadas e link para o repositório
 - Indicação de status de cada projeto (concluído ou em andamento)
-- Botão de contato via WhatsApp
+- Botão de contato via WhatsApp e links para LinkedIn, GitHub, X e Instagram
 - Layout responsivo, com tipografia otimizada e metadados para compartilhamento (Open Graph)
 
 ---
@@ -77,7 +77,7 @@ Cada projeto é um objeto em `data/content.ts`:
   status: true,               // true = concluído, false = em andamento
   description: "O que o projeto faz, em 1 ou 2 frases.",
   category: "Web",            // ex.: "Web", "APIs"
-  stack: ["NextJS", "TypeScript"],
+  stack: ["Next.js", "TypeScript"],
   repo: "https://github.com/usuario/repositorio",
 },
 ```
