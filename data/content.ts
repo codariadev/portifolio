@@ -46,6 +46,17 @@ export const content = {
     ],
     projects: [
       {
+        title: "Luisa Reis — Landing Page do E-book Do Lead ao Cliente",
+        status: true,
+        description:
+          "Landing page de vendas para o e-book de uma estrategista comercial, criada do zero com base na identidade visual da marca. Totalmente responsiva, com navegação por âncoras, menu mobile, seção de oferta com checkout configurado por variável de ambiente, FAQ e rodapé com contatos e mensagem pré-preenchida no WhatsApp. Publicada na Vercel com domínio próprio.",
+        category: "Web" as const,
+        stack: ["Next.js", "React", "TypeScript", "Tailwind CSS v4", "Vercel"],
+        repo: "https://github.com/codariadev/luisa-reis-lp",
+        demo: "https://www.luisareis.com.br",
+        version: "v1.0.0",
+      },
+      {
         title: "Codaria SaaS — Plataforma de Gestão para Barbearias e Salões",
         status: true,
         description:
@@ -192,7 +203,7 @@ export const content = {
       filters: ["Todos", "Web", "APIs"],
       finished: "Finalizado",
       inProgress: "Em andamento",
-      seeDemo: "Ver demo",
+      seeDemo: "Acessar site",
       seeCode: "Ver código",
       seeCertificate: "Ver certificado",
       ongoing: "Em andamento",
@@ -248,6 +259,17 @@ export const content = {
       },
     ],
     projects: [
+      {
+        title: "Luisa Reis — Sales Landing Page for the E-book Do Lead ao Cliente",
+        status: true,
+        description:
+          "Sales landing page for a sales strategist's e-book, built from scratch following the brand's visual identity. Fully responsive, with anchor navigation, mobile menu, an offer section with checkout configured via environment variable, FAQ, and a footer with contacts and a prefilled WhatsApp message. Deployed on Vercel with a custom domain.",
+        category: "Web" as const,
+        stack: ["Next.js", "React", "TypeScript", "Tailwind CSS v4", "Vercel"],
+        repo: "https://github.com/codariadev/luisa-reis-lp",
+        demo: "https://www.luisareis.com.br",
+        version: "v1.0.0",
+      },
       {
         title: "Codaria SaaS — Management Platform for Barbershops and Salons",
         status: true,
