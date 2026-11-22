@@ -43,17 +43,21 @@ export default function Projects({ projects }: { projects: Project[] }) {
                 <li key={s}>{s}</li>
               ))}
             </ul>
-            <div className="project-links">
-              {p.demo && (
-                <a href={p.demo} target="_blank" rel="noopener noreferrer">
-                  {t.ui.seeDemo}
-                </a>
-              )}
-              <a href={p.repo} target="_blank" rel="noopener noreferrer">
-                {t.ui.seeCode}
-              </a>
-              {p.version && <span className="version">{p.version}</span>}
-            </div>
+            {(p.demo || p.repo || p.version) && (
+              <div className="project-links">
+                {p.demo && (
+                  <a href={p.demo} target="_blank" rel="noopener noreferrer">
+                    {t.ui.seeDemo}
+                  </a>
+                )}
+                {p.repo && (
+                  <a href={p.repo} target="_blank" rel="noopener noreferrer">
+                    {t.ui.seeCode}
+                  </a>
+                )}
+                {p.version && <span className="version">{p.version}</span>}
+              </div>
+            )}
           </li>
         ))}
       </ul>

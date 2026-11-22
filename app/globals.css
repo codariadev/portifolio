@@ -547,6 +547,10 @@ a {
   color: var(--accent);
 }
 
+.project-links .version:only-child {
+  margin-left: auto;
+}
+
 .badge {
   font-size: 0.75rem;
   font-weight: 600;
