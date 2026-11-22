@@ -5,18 +5,20 @@ export const content = {
     profile: {
       welcome: "Olá, meu nome é",
       name: "Lucas Eduardo Alves",
-      role: "Desenvolvedor Frontend | Backend",
+      role: "Desenvolvedor Full-Stack",
       headline: "Sistemas rápidos, APIs robustas e arquiteturas feitas para durar.",
       intro:
-        "Desenvolvo aplicações web com foco em performance, usabilidade e design. Trabalho na construção de interfaces com Next, Angular e Vue, e na estruturação de dados e APIs com Python e Firebase.",
-      location: "Santa Catarina, Brasil",
+        "Desenvolvo aplicações web com foco em performance, usabilidade e design. Trabalho na construção de interfaces com Next.js, Angular e Vue, e na estruturação de dados e APIs com Python e Firebase.",
+      location: "Palhoça/SC, Brasil",
       whatsapp: "5548920048026",
       linkedin: "https://www.linkedin.com/in/lucasealves/",
       github: "https://github.com/codariadev",
+      x: "https://x.com/codariadev",
+      instagram: "https://www.instagram.com/codariadev",
       photo: "/assets/profile.jpg",
     },
     about: [
-      "Programo há mais de 4 anos e gosto de transformar ideias em produtos que as pessoas realmente conseguem usar. Comecei pelo web design, com HTML, CSS e JavaScript, e evolui para aplicações completas em React, Next e Angular.",
+      "Programo há mais de 4 anos e gosto de transformar ideias em produtos que as pessoas realmente conseguem usar. Comecei pelo web design, com HTML, CSS e JavaScript, e evolui para aplicações completas em React, Next.js e Angular.",
       "Também desenvolvo apps mobile com React Native, automações e dashboards com Python, e integrações com Firebase. Sou curioso por natureza e estou sempre buscando um jeito mais simples e sólido de resolver um problema.",
     ],
     education: [
@@ -60,23 +62,10 @@ export const content = {
         title: "Codaria SaaS — Plataforma de Gestão para Barbearias e Salões",
         status: false,
         description:
-          "Plataforma SaaS multi-tenant desenvolvida para centralizar a gestão de barbearias e salões de beleza, com módulos de agendamento, clientes, profissionais, serviços, estoque, financeiro, comissões e relatórios. Arquitetura com Firebase independente por estabelecimento, permitindo isolamento dos dados e gerenciamento centralizado dos tenants.",
+          "Plataforma SaaS multi-tenant para gestão de barbearias e salões, com módulos de agendamento, clientes, profissionais, serviços, estoque, financeiro, comissões e relatórios. Em desenvolvimento, com arquitetura em Next.js e Postgres (Drizzle).",
         category: "Web" as const,
-        stack: [
-          "Next.js",
-          "React",
-          "TypeScript",
-          "Node.js",
-          "Firebase",
-          "Firebase Authentication",
-          "Cloud Firestore",
-          "Firebase Admin SDK",
-          "Firebase Storage",
-          "Tailwind CSS",
-          "Vitest",
-          "ESLint",
-        ],
-        version: "v1.0.0",
+        stack: ["Next.js", "React", "TypeScript", "Postgres", "Drizzle", "Tailwind CSS"],
+        repo: "https://github.com/codariadev/codaria-saas",
       },
       {
         title: "Producer / Consumer com Node.js + RabbitMQ",
@@ -92,7 +81,7 @@ export const content = {
         description:
           "API RESTful profissional para gerenciamento e controle de dívidas, construída com Node.js, TypeScript, Express, Prisma ORM e PostgreSQL, utilizando Docker para containerização.",
         category: "APIs" as const,
-        stack: ["NodeJS", "TypeScript", "Express", "Prisma ORM", "PostgreSQL", "Zod", "Docker", "Swagger/OpenAPI"],
+        stack: ["Node.js", "TypeScript", "Express", "Prisma ORM", "PostgreSQL", "Zod", "Docker", "Swagger/OpenAPI"],
         repo: "https://github.com/codariadev/debt-api",
       },
       {
@@ -101,7 +90,7 @@ export const content = {
         description:
           "O SincroAlign é desenvolvido por CodariaDev e colaboradores com um objetivo principal: aprender na prática. Aqui o processo importa tanto quanto o resultado, então erros, refatorações e experimentos fazem parte da proposta.",
         category: "Web" as const,
-        stack: ["NextJS", "HTML", "CSS"],
+        stack: ["Next.js", "HTML", "CSS"],
         repo: "https://github.com/codariadev/projeto-estudo-main",
       },
       {
@@ -111,7 +100,7 @@ export const content = {
           "Sistema web multiempresa para gestão e agendamento de lava-jatos. Conta com painéis por perfil (cliente, lavador, administrador e master), login com e-mail ou Google, notificações push quando a lavagem é concluída e arquivamento diário automático dos serviços em um histórico.",
         category: "Web" as const,
         stack: [
-          "NextJS",
+          "Next.js",
           "React",
           "TypeScript",
           "Tailwind CSS",
@@ -137,7 +126,7 @@ export const content = {
         title: "SecurusAuth",
         status: false,
         description:
-          "API RESTful de autenticação e autorização desenvolvida em FastAPI com Python 3.14. Conta com hashing de passwords seguro usando bcrypt, emissão e validação de tokens JWT (Bearer), validação de schemas com Pydantic e documentação interativa com Swagger UI.",
+          "API RESTful de autenticação e autorização desenvolvida em FastAPI com Python 3.14. Conta com hashing de senhas seguro usando bcrypt, emissão e validação de tokens JWT (Bearer), validação de schemas com Pydantic e documentação interativa com Swagger UI.",
         category: "APIs" as const,
         stack: ["Python", "FastAPI", "Pydantic", "JWT", "Uvicorn", "Bcrypt"],
         repo: "https://github.com/codariadev/securusauth",
@@ -165,7 +154,7 @@ export const content = {
       {
         title: "Dados e backend",
         text: "Automação, análise de dados e integrações com serviços na nuvem.",
-        items: ["Python", "Firebase", "Streamlit", "Plotly"],
+        items: ["Python", "Node.js", "TypeScript", "PostgreSQL", "Firebase", "Streamlit", "Plotly"],
       },
       {
         title: "Fluxo de trabalho",
@@ -218,18 +207,20 @@ export const content = {
     profile: {
       welcome: "Hello, my name is",
       name: "Lucas Eduardo Alves",
-      role: "Frontend | Backend Developer",
+      role: "Full-Stack Developer",
       headline: "Fast systems, robust APIs, and architectures built to last.",
       intro:
-        "I develop web applications focused on performance, usability, and design. I work on building interfaces with Next, Angular, and Vue, and structuring data and APIs with Python and Firebase.",
-      location: "Santa Catarina, Brazil",
+        "I develop web applications focused on performance, usability, and design. I work on building interfaces with Next.js, Angular, and Vue, and structuring data and APIs with Python and Firebase.",
+      location: "Palhoça, Santa Catarina, Brazil",
       whatsapp: "5548920048026",
       linkedin: "https://www.linkedin.com/in/lucasealves/",
       github: "https://github.com/codariadev",
+      x: "https://x.com/codariadev",
+      instagram: "https://www.instagram.com/codariadev",
       photo: "/assets/profile.jpg",
     },
     about: [
-      "I've been programming for over 4 years and enjoy turning ideas into products that people can actually use. I started with web design using HTML, CSS, and JavaScript, and evolved into full applications with React, Next, and Angular.",
+      "I've been programming for over 4 years and enjoy turning ideas into products that people can actually use. I started with web design using HTML, CSS, and JavaScript, and evolved into full applications with React, Next.js, and Angular.",
       "I also develop mobile apps with React Native, automations and dashboards with Python, and integrations with Firebase. I'm naturally curious and always looking for a simpler and more solid way to solve a problem.",
     ],
     education: [
@@ -273,23 +264,10 @@ export const content = {
         title: "Codaria SaaS — Management Platform for Barbershops and Salons",
         status: false,
         description:
-          "Multi-tenant SaaS platform developed to centralize the management of barbershops and beauty salons, with modules for scheduling, clients, professionals, services, inventory, finance, commissions, and reports. Architecture with independent Firebase per establishment, enabling data isolation and centralized tenant management.",
+          "Multi-tenant SaaS for barbershop and salon management (scheduling, clients, staff, services, inventory, finance, commissions, and reports). In progress, built with Next.js and Postgres (Drizzle).",
         category: "Web" as const,
-        stack: [
-          "Next.js",
-          "React",
-          "TypeScript",
-          "Node.js",
-          "Firebase",
-          "Firebase Authentication",
-          "Cloud Firestore",
-          "Firebase Admin SDK",
-          "Firebase Storage",
-          "Tailwind CSS",
-          "Vitest",
-          "ESLint",
-        ],
-        version: "v1.0.0",
+        stack: ["Next.js", "React", "TypeScript", "Postgres", "Drizzle", "Tailwind CSS"],
+        repo: "https://github.com/codariadev/codaria-saas",
       },
       {
         title: "Producer / Consumer with Node.js + RabbitMQ",
@@ -305,7 +283,7 @@ export const content = {
         description:
           "Professional RESTful API for debt management and control, built with Node.js, TypeScript, Express, Prisma ORM, and PostgreSQL, using Docker for containerization.",
         category: "APIs" as const,
-        stack: ["NodeJS", "TypeScript", "Express", "Prisma ORM", "PostgreSQL", "Zod", "Docker", "Swagger/OpenAPI"],
+        stack: ["Node.js", "TypeScript", "Express", "Prisma ORM", "PostgreSQL", "Zod", "Docker", "Swagger/OpenAPI"],
         repo: "https://github.com/codariadev/debt-api",
       },
       {
@@ -314,7 +292,7 @@ export const content = {
         description:
           "SincroAlign is developed by CodariaDev and collaborators with one main goal: learning in practice. Here the process matters as much as the result, so errors, refactorings, and experiments are part of the proposal.",
         category: "Web" as const,
-        stack: ["NextJS", "HTML", "CSS"],
+        stack: ["Next.js", "HTML", "CSS"],
         repo: "https://github.com/codariadev/projeto-estudo-main",
       },
       {
@@ -324,7 +302,7 @@ export const content = {
           "Multi-company web system for car wash management and scheduling. Features profile-based panels (client, washer, admin, and master), login with email or Google, push notifications when washing is completed, and automatic daily archiving of services into a history.",
         category: "Web" as const,
         stack: [
-          "NextJS",
+          "Next.js",
           "React",
           "TypeScript",
           "Tailwind CSS",
@@ -378,7 +356,7 @@ export const content = {
       {
         title: "Data and Backend",
         text: "Automation, data analysis, and integrations with cloud services.",
-        items: ["Python", "Firebase", "Streamlit", "Plotly"],
+        items: ["Python", "Node.js", "TypeScript", "PostgreSQL", "Firebase", "Streamlit", "Plotly"],
       },
       {
         title: "Workflow",
@@ -457,7 +435,7 @@ const publishedProjectLabels = new Set(["projetos publicados", "published projec
 
 for (const lang of ["pt", "en"] as const) {
   const fact = content[lang].ui.facts.find((item) => publishedProjectLabels.has(item.label));
-  if (fact) fact.value = String(content[lang].projects.length);
+  if (fact) fact.value = String(content[lang].projects.filter((project) => project.status).length);
 }
 
 export function getContent(lang: Language) {

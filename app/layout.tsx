@@ -13,16 +13,31 @@ const body = Instrument_Sans({
   display: "swap",
 });
 
+const siteUrl = "https://codariadev.vercel.app";
+const title = "Lucas Eduardo Alves | Desenvolvedor Full-Stack";
+const description =
+  "Portfólio de Lucas Eduardo Alves, desenvolvedor full-stack em Palhoça/SC. Next.js, React, Angular, Vue, React Native, Python e Firebase. Landing pages, apps e sistemas. Aberto a freelas no Brasil e no exterior.";
+
 export const metadata: Metadata = {
-  title: "Lucas Eduardo Alves | Desenvolvedor Frontend",
-  icons: { icon: "/logo.png" },
-  description:
-    "Portfólio de Lucas Eduardo Alves, desenvolvedor frontend com React, Angular, Vue, React Native e Python.",
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
+  alternates: { canonical: "/" },
+  robots: { index: true, follow: true },
   openGraph: {
-    title: "Lucas Eduardo Alves | Desenvolvedor Frontend",
-    description: "Interfaces rápidas, claras e feitas para durar.",
+    title,
+    description,
     type: "website",
     locale: "pt_BR",
+    url: siteUrl,
+    siteName: "CodariaDev",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@codariadev",
+    creator: "@codariadev",
+    title,
+    description,
   },
 };
 
